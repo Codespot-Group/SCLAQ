@@ -1,0 +1,15 @@
+D:\Github\SCLAQ\bin\Debug\net6.0\SCLAQ.exe
+D:\Github\SCLAQ\bin\Debug\net6.0\SCLAQ.deps.json
+D:\Github\SCLAQ\bin\Debug\net6.0\SCLAQ.runtimeconfig.json
+D:\Github\SCLAQ\bin\Debug\net6.0\SCLAQ.dll
+D:\Github\SCLAQ\bin\Debug\net6.0\SCLAQ.pdb
+D:\Github\SCLAQ\obj\Debug\net6.0\SCLAQ.csproj.AssemblyReference.cache
+D:\Github\SCLAQ\obj\Debug\net6.0\SCLAQ.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\SCLAQ\obj\Debug\net6.0\SCLAQ.AssemblyInfoInputs.cache
+D:\Github\SCLAQ\obj\Debug\net6.0\SCLAQ.AssemblyInfo.cs
+D:\Github\SCLAQ\obj\Debug\net6.0\SCLAQ.csproj.CoreCompileInputs.cache
+D:\Github\SCLAQ\obj\Debug\net6.0\SCLAQ.dll
+D:\Github\SCLAQ\obj\Debug\net6.0\refint\SCLAQ.dll
+D:\Github\SCLAQ\obj\Debug\net6.0\SCLAQ.pdb
+D:\Github\SCLAQ\obj\Debug\net6.0\SCLAQ.genruntimeconfig.cache
+D:\Github\SCLAQ\obj\Debug\net6.0\ref\SCLAQ.dll
