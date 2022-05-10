@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "boiIZ05NPpJCztanxhulk0ecOj+5YyjhDPbIOgq7xCyPheAPwtdNkBsI2O4hcvX16D3WUJ8zkVeHJMG+cWON1w==",
+  "dgSpecHash": "AkMYAU7FmStdrlevB3A5E8u7AMM0oLGm+OkIt/LCmScFY85eFivG92GYN8xlawQRdOVcSzoW416Ayuda02av8A==",
   "success": true,
-  "projectFilePath": "D:\\Github\\SCLAQ\\SCLAQ.csproj",
+  "projectFilePath": "/home/alkovalski/vs-code-workspace/SCLAQ/SCLAQ.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Github\\SCLAQ\\SCLAQ.csproj": {}
+    "/home/alkovalski/vs-code-workspace/SCLAQ/SCLAQ.csproj": {}
   },
   "projects": {
-    "D:\\Github\\SCLAQ\\SCLAQ.csproj": {
+    "/home/alkovalski/vs-code-workspace/SCLAQ/SCLAQ.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Github\\SCLAQ\\SCLAQ.csproj",
+        "projectUniqueName": "/home/alkovalski/vs-code-workspace/SCLAQ/SCLAQ.csproj",
         "projectName": "SCLAQ",
-        "projectPath": "D:\\Github\\SCLAQ\\SCLAQ.csproj",
-        "packagesPath": "C:\\Users\\berks\\.nuget\\packages\\",
-        "outputPath": "D:\\Github\\SCLAQ\\obj\\",
+        "projectPath": "/home/alkovalski/vs-code-workspace/SCLAQ/SCLAQ.csproj",
+        "packagesPath": "/home/alkovalski/.nuget/packages/",
+        "outputPath": "/home/alkovalski/vs-code-workspace/SCLAQ/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\berks\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/alkovalski/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -52,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.300/RuntimeIdentifierGraph.json"
         }
       }
     }
