@@ -5,7 +5,7 @@
 /// #ca.cep
 /// #ca.name
 
-public interface IAutoCodeType
+public interface IAutoCodeType 
 {
     //public String code;
 
@@ -26,7 +26,6 @@ public class AutoCodeTypeName : IAutoCodeType
     {
         return "Felipe";
     }
-
     string IAutoCodeType.code
     {
         get { return "ca.name"; }
