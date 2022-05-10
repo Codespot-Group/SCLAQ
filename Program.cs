@@ -5,7 +5,8 @@
 /// #ca.cep
 /// #ca.name
 
-public interface ICAType {
+public interface IAutoCodeType
+{
     //public String code;
 
     public string code { get; }
@@ -14,28 +15,32 @@ public interface ICAType {
 }
 
 /// <summary>
-/// This is an implementation of ICAType for name types.
+/// This is an implementation of IAutoCodeType for name types.
 /// 
 /// Ex.: Felipe, Kovalski, ...
 /// </summary>
-public class CATypeName : ICAType {
-    
-    public static string generate() {
+public class AutoCodeTypeName : IAutoCodeType
+{
+
+    public static string generate()
+    {
         return "Felipe";
     }
 
-    string ICAType.code {
+    string IAutoCodeType.code
+    {
         get { return "ca.name"; }
     }
-    string ICAType.generate() {
-        return CATypeName.generate();
-    }    
+    string IAutoCodeType.generate()
+    {
+        return AutoCodeTypeName.generate();
+    }
 }
 
 class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine(CATypeName.generate());
+        Console.WriteLine(AutoCodeTypeName.generate());
     }
 }
