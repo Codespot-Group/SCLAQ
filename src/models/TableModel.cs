@@ -15,7 +15,9 @@ class TableModel
         Regex tableNameRegex = new Regex("(?<=CREATE TABLE ).+?(?= \\()");
         Match tableNameMatch = tableNameRegex.Match(sql);
         this.name = tableNameMatch.ToString();
-        
+
+        Regex tableAttributesRegex = new Regex("");
+        Match tableAttributesMatch = tableAttributesRegex.Match(sql);
         this.attributes = new List<AttributeModel>();
     }
 }

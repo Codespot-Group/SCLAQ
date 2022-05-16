@@ -17,7 +17,7 @@ class FileWriter
     /// </summary>
     public static void writeOnFile(string path, List<string> outputString)
     {
-        File.WriteAllLinesAsync(path + fileName + fileType,  outputString);
+        File.WriteAllLinesAsync(path + fileName + fileType, outputString);
     }
 
     /// <summary>
@@ -25,7 +25,7 @@ class FileWriter
     /// </summary>
     public static void writeOnFile(string path, string[] outputString)
     {
-        File.WriteAllLinesAsync(path + fileName + fileType,  outputString);
+        File.WriteAllLinesAsync(path + fileName + fileType, outputString);
     }
     /// #endregion
 
