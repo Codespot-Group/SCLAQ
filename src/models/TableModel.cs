@@ -14,13 +14,14 @@ class TableModel
     {
         sql = sql.ToLower();
         sql = Regex.Replace(sql, @"\s+", " ");
+        sql = Regex.Replace(sql, @"(`|DEFAULT CHARSET|DEFAULT)", "");
 
         Regex tableNameRegex = new Regex(@"(?<=create table ).+?(?= \()");
         Match tableNameMatch = tableNameRegex.Match(sql);
         this.name = tableNameMatch.ToString();
 
         this.attributes = new List<AttributeModel>();
-        Regex tableAttributesRegex = new Regex(@"(\w+)\s+(varchar|text|int|char)");
+        Regex tableAttributesRegex = new Regex(@"(\w+)\s+(varchar|text|int)");
         foreach (Match match in tableAttributesRegex.Matches(sql))
         {
             string[] splited = match.ToString().Split(" ");
@@ -32,6 +33,7 @@ class TableModel
     {
         sql = sql.ToLower();
         sql = Regex.Replace(sql, @"\s+", " ");
+        sql = Regex.Replace(sql, @"(`|DEFAULT CHARSET|DEFAULT)", "");
 
         List<TableModel> tables = new List<TableModel>();
 
