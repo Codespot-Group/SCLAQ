@@ -16,5 +16,10 @@
         TableModel table = new TableModel(sql);
 
         System.Console.WriteLine(table.name);
+
+        foreach (AttributeModel attribute in table.attributes)
+        {
+            System.Console.WriteLine(attribute.name + "|" + attribute.type);
+        }
     }
 }

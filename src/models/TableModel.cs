@@ -12,12 +12,19 @@ class TableModel
 
     public TableModel(string sql)
     {
-        Regex tableNameRegex = new Regex("(?<=CREATE TABLE ).+?(?= \\()");
+        sql = sql.ToLower();
+        sql = Regex.Replace(sql, @"\s+", " ");
+
+        Regex tableNameRegex = new Regex(@"(?<=create table ).+?(?= \()");
         Match tableNameMatch = tableNameRegex.Match(sql);
         this.name = tableNameMatch.ToString();
 
-        Regex tableAttributesRegex = new Regex("");
-        Match tableAttributesMatch = tableAttributesRegex.Match(sql);
         this.attributes = new List<AttributeModel>();
+        Regex tableAttributesRegex = new Regex(@"(\w+)\s+(varchar|text|int|char)");
+        foreach (Match match in tableAttributesRegex.Matches(sql))
+        {
+            string[] splited = match.ToString().Split(" ");
+            this.attributes.Add(new AttributeModel(splited[0], splited[1]));
+        }
     }
 }
