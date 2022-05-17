@@ -30,3 +30,30 @@ class FileWriter
     /// #endregion
 
 }
+
+class FileReader{
+
+    const string fileType = ".sql";
+
+    /// <summary>
+    /// This method reads from a specified file, returns all lines in an string array.
+    /// </summary>
+    public static string[] readFile(string path){
+        return File.ReadAllLines(path+fileType);
+    } 
+
+    /// <summary>
+    /// This method reads from a specified file, returns all lines in an string type.
+    /// </summary>
+    public static string readFile_ (string path){
+        string[] file = readFile(path);
+        string stringBuilder = "";
+
+        foreach(string str in file){
+            stringBuilder+= str;
+        }
+
+        return stringBuilder;
+    }
+
+}
