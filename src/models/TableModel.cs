@@ -27,4 +27,21 @@ class TableModel
             this.attributes.Add(new AttributeModel(splited[0], splited[1]));
         }
     }
+
+    static public List<TableModel> multiple(string sql)
+    {
+        sql = sql.ToLower();
+        sql = Regex.Replace(sql, @"\s+", " ");
+
+        List<TableModel> tables = new List<TableModel>();
+
+        Regex regex = new Regex(@"create table(.*?);");
+
+        foreach (Match match in regex.Matches(sql))
+        {
+            tables.Add(new TableModel(match.ToString()));
+        }
+
+        return tables;
+    }
 }

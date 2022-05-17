@@ -11,15 +11,27 @@
                 telefone varchar(100) NULL,
                 email varchar(100) NULL
             );
+
+            CREATE TABLE Fornecedores2 (
+                id INT NULL,
+                nome varchar(100) NULL, 
+                cnpj VARCHAR(16) NULL,
+                endereco varchar(100) NULL,
+                telefone varchar(100) NULL,
+                email varchar(100) NULL
+            );
         ";
 
-        TableModel table = new TableModel(sql);
+        List<TableModel> tables = TableModel.multiple(sql);
 
-        System.Console.WriteLine(table.name);
-
-        foreach (AttributeModel attribute in table.attributes)
+        foreach (TableModel table in tables)
         {
-            System.Console.WriteLine(attribute.name + "|" + attribute.type);
+            System.Console.WriteLine(table.name);
+
+            foreach (AttributeModel attribute in table.attributes)
+            {
+                System.Console.WriteLine(attribute.name + "|" + attribute.type);
+            }
         }
     }
 }
