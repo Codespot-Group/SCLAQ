@@ -3,7 +3,10 @@
     static void Main(string[] args)
     {
         string sql = @"
-
+            CREATE TABLE teste (
+                idade int,
+                name varchar
+            );
         ";
 
         List<TableModel> tables = TableModel.multiple(sql);
@@ -18,6 +21,10 @@
             }
 
             System.Console.WriteLine();
+
+            List<string> inserts = AutoCode.generate(table);
+
+            System.Console.WriteLine(String.Join("\n", inserts));
         }
     }
 }

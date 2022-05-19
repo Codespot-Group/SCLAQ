@@ -1,7 +1,7 @@
 class AttributeModel
 {
-    public string name;
-    public string type;
+    public string name { get; set; }
+    public string type { get; set; }
 
     public AttributeModel(string name, string type)
     {
