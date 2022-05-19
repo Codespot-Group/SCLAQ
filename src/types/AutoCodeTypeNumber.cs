@@ -14,7 +14,7 @@ public class AutoCodeTypeNumber : IAutoCodeType
     }
     string IAutoCodeType.code
     {
-        get { return "ca.number"; }
+        get { return "ac.number"; }
     }
     string IAutoCodeType.generate()
     {
