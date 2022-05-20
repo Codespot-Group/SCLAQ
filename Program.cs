@@ -4,8 +4,9 @@
     {
         string sql = @"
             CREATE TABLE teste (
-                idade int,
-                name varchar
+                id int,
+                idade int #ac.number,
+                name varchar #ac.name
             );
         ";
 

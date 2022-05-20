@@ -12,10 +12,10 @@ class AutoCode
             {
                 switch (attribute.type)
                 {
-                    case "int":
+                    case "number":
                         values.Add(AutoCodeTypeNumber.generate());
                         break;
-                    case "varchar":
+                    case "name":
                         values.Add($"\"{AutoCodeTypeName.generate()}\"");
                         break;
                 }

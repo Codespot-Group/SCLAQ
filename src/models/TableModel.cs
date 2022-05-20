@@ -21,11 +21,10 @@ class TableModel
         this.name = tableNameMatch.ToString();
 
         this.attributes = new List<AttributeModel>();
-        Regex tableAttributesRegex = new Regex(@"(\w+)\s+(varchar|text|int)");
+        Regex tableAttributesRegex = new Regex(@"(\w+)\s+(varchar|text|int) #ac.(number|name)");
         foreach (Match match in tableAttributesRegex.Matches(sql))
         {
-            string[] splited = match.ToString().Split(" ");
-            this.attributes.Add(new AttributeModel(splited[0], splited[1]));
+            this.attributes.Add(new AttributeModel(match.Groups[1].Value, match.Groups[3].Value));
         }
     }
 
