@@ -6,7 +6,8 @@
             CREATE TABLE teste (
                 id int,
                 idade int #ac.number,
-                name varchar #ac.name
+                name varchar #ac.name,
+                numero varchar #ac.number
             );
         ";
 
