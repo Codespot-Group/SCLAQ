@@ -2,7 +2,7 @@ using System.Data.SQLite;
 
 class NameModel
 {
-    public NameModel(string? value)
+    public NameModel(string value)
     {
         this.Value = value;
     }
@@ -12,11 +12,16 @@ class NameModel
         SQLiteDataReader reader = new SQLiteCommand("SELECT value FROM names ORDER BY RANDOM() LIMIT 1;", connection).ExecuteReader();
         reader.Read();
 
+        while(reader == null)
+        {
+            reader = new SQLiteCommand("SELECT value FROM names ORDER BY RANDOM() LIMIT 1;", connection).ExecuteReader();
+            reader.Read();
+        }
 
         return new NameModel(reader["value"].ToString());
     }
 
-    public string? Value { get; set; }
+    public string Value { get; set; }
 
 
 }

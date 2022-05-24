@@ -1,5 +1,6 @@
 class FileWriter
 {
+    /// Directory.GetCurrentDirectory()
     const string fileType = ".sql";
     const string fileName = "output";
 
@@ -27,7 +28,6 @@ class FileWriter
     {
         File.WriteAllLinesAsync(path + fileName + fileType, outputString);
     }
-    /// #endregion
 
 }
 
